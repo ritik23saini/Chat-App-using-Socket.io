@@ -16,7 +16,7 @@ const App = () => {
   }, [checkAuth]);
 
   return (
-    <div data-theme={'coffee'}>
+    <div data-theme={'light'}>
       <Navbar />
 
       <Routes>
