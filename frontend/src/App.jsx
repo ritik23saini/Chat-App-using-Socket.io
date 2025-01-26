@@ -7,7 +7,6 @@ import ProfilePage from "./pages/ProfilePage";
 import { useAuthStore } from "./store/useAuthStore";
 import { useEffect } from "react";
 import { Toaster } from "react-hot-toast";
-
 const App = () => {
   const { authUser, checkAuth } = useAuthStore();
 

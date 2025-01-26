@@ -7,12 +7,6 @@ config();
 const seedUsers = [
   // Female Users
   {
-    email: "emma.thompson@example.com",
-    fullName: "Emma Thompson",
-    password: "123456",
-    profilePic: "https://randomuser.me/api/portraits/women/1.jpg",
-  },
-  {
     email: "olivia.miller@example.com",
     fullName: "Olivia Miller",
     password: "123456",
@@ -100,7 +94,7 @@ const seedUsers = [
   },
 ];
 
-const seedDatabase = async () => {
+export const seedDatabase = async () => {
   try {
     await connectDB();
 
@@ -111,5 +105,3 @@ const seedDatabase = async () => {
   }
 };
 
-// Call the function
-seedDatabase();
