@@ -5,7 +5,6 @@ import User from "../models/user.model.js";
 config();
 
 const seedUsers = [
-  // Female Users
   {
     email: "olivia.miller@example.com",
     fullName: "Olivia Miller",
@@ -49,7 +48,6 @@ const seedUsers = [
     profilePic: "https://randomuser.me/api/portraits/women/8.jpg",
   },
 
-  // Male Users
   {
     email: "james.anderson@example.com",
     fullName: "James Anderson",
