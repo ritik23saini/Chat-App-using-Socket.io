@@ -10,7 +10,13 @@ const MessageInput = () => {
   const { sendMessage } = useChatStore();
 
   const handleImageChange = (e) => {
+
     const file = e.target.files[0];
+
+    if (file.size > 20 * 1024) {
+      toast.error("Size should be less than 20 KB");
+      return;
+    }
     if (!file.type.startsWith("image/")) {
       toast.error("Please select an image file");
       return;

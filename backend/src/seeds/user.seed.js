@@ -5,6 +5,13 @@ import User from "../models/user.model.js";
 config();
 
 const seedUsers = [
+  // Female Users
+  {
+    email: "emma.thompson@example.com",
+    fullName: "Emma Thompson",
+    password: "123456",
+    profilePic: "https://randomuser.me/api/portraits/women/1.jpg",
+  },
   {
     email: "olivia.miller@example.com",
     fullName: "Olivia Miller",
@@ -48,6 +55,7 @@ const seedUsers = [
     profilePic: "https://randomuser.me/api/portraits/women/8.jpg",
   },
 
+  // Male Users
   {
     email: "james.anderson@example.com",
     fullName: "James Anderson",
@@ -92,7 +100,7 @@ const seedUsers = [
   },
 ];
 
-export const seedDatabase = async () => {
+const seedDatabase = async () => {
   try {
     await connectDB();
 
@@ -103,3 +111,5 @@ export const seedDatabase = async () => {
   }
 };
 
+// Call the function
+seedDatabase();
